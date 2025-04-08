@@ -1,0 +1,74 @@
+<web-app xmlns="http://jakarta.ee/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://jakarta.ee/xml/ns/javaee
+                             http://jakarta.ee/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+
+    <servlet>
+        <servlet-name>CheckLogin</servlet-name>
+        <servlet-class>controller.CheckLogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Verification</servlet-name>
+        <servlet-class>controller.Verification</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>controller.LoginServlet</servlet-class>
+    </servlet>
+       <servlet>
+        <servlet-name>CreditController</servlet-name>
+        <servlet-class>controller.CreditController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DepenseController</servlet-name>
+        <servlet-class>controller.DepenseController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DepenseServlet</servlet-name>
+        <servlet-class>controller.DepenseServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ListServlet</servlet-name>
+        <servlet-class>controller.ListServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ListDepense</servlet-name>
+        <servlet-class>controller.ListDepense</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CheckLogin</servlet-name>
+        <url-pattern>/CheckLogin</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>Verification</servlet-name>
+        <url-pattern>/Verification</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CreditController</servlet-name>
+        <url-pattern>/credit</url-pattern>
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>DepenseController</servlet-name>
+        <url-pattern>/dep</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DepenseServlet</servlet-name>
+        <url-pattern>/depense</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListServlet</servlet-name>
+        <url-pattern>/listall</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListDepense</servlet-name>
+        <url-pattern>/lis</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
